@@ -4,8 +4,9 @@
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",
-    "serve-aaa": "vue-cli-service serve --mode aaa",
-    "serve-bbb": "vue-cli-service serve --mode bbb",
+    "serve-food": "vue-cli-service serve --mode food",
+    "serve-colthes": "vue-cli-service serve --mode colthes",
+    "serve-pc": "vue-cli-service serve --mode pc",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint"
   },
