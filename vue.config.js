@@ -1,4 +1,6 @@
 // vue.config.js
+const path = require('path');
+
 module.exports = {
   pages: {
       index: {
@@ -18,8 +20,17 @@ module.exports = {
     requireModuleExtension: true,
     loaderOptions: {
       scss: {
-        prependData: `@import "~@/styles/main.scss";`
+        prependData: `@import "~@/styles/main/index.scss";`
       }
     }
+  },
+  configureWebpack: (config) => {
+    config.resolve = { // 配置解析别名
+      extensions: ['.js', '.json', '.vue'],  // 自动添加文件名后缀
+      alias: {
+        '@': path.resolve(__dirname, './src'),
+        '@c': path.resolve(__dirname, './src/components')
+      }
+    } 
   }
 }
