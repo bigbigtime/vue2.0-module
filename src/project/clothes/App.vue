@@ -1,9 +1,9 @@
 <template>
   <div id="app">
-    aaaaaaa
     <router-view />
   </div>
 </template>
 
 <style lang="scss">
+#app{ padding:0 $container-padding; }
 </style>

@@ -1,6 +1,6 @@
 <template>
     <ul class="username-type-tag">
-        <li>
+        <li class="current">
             <i class="icon icon-size-18 icon-email icon-mb--4"></i>
             手机
         </li>
@@ -31,6 +31,10 @@ export default {
         font-size: 14px;
         line-height: 18px;
         color: #ccc;
+        &.current {
+            background-color: $color-main;
+            color: #fff;
+        }
     }
 }
 </style>

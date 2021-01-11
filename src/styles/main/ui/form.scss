@@ -8,7 +8,7 @@
     border-width: 2px;
     border-style: solid;
     border-color: #fff;
-    &.active { border-color: #FF7F56; }
+    &.active { border-color: $color-main; }
     .van-cell {
         padding: 0;
         background: none;

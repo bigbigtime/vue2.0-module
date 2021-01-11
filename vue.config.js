@@ -20,7 +20,7 @@ module.exports = {
     requireModuleExtension: true,
     loaderOptions: {
       scss: {
-        prependData: `@import "~@/styles/main/index.scss";`
+        prependData: `@import "~@/styles/${process.env.VUE_APP_PROJECT}/index.scss";`
       }
     }
   },
