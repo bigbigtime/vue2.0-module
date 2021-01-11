@@ -1,0 +1,16 @@
+.form-item {
+    margin-bottom: 16px;
+}
+.form-body {
+    border-radius: 5px;
+    background-color: #fff;
+    padding: 13.5px 20px;
+    border-width: 2px;
+    border-style: solid;
+    border-color: #fff;
+    &.active { border-color: #FF7F56; }
+    .van-cell {
+        padding: 0;
+        background: none;
+    }
+}

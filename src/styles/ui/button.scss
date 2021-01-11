@@ -1,0 +1,36 @@
+.button-ui {
+    display: inline-block;
+    border: none;
+    padding: 0 20px;
+    background: none;
+    span {
+        display: block;
+    }
+}
+
+/* 颜色  */
+.button-ui-main {
+    background-color: #FF7F56;
+    span { color: #fff; }
+}
+.button-ui-success {
+    background-color: #07c160;
+    span { color: #fff; }
+}
+
+.button-ui-round { border-radius: 100px; }
+.button-ui-block { display: block; width: 100%; }
+
+.button-ui-small {
+    span {
+        padding: 12px 0;
+        font-size: 14px;
+    }
+}
+
+.button-ui-large {
+    span {
+        padding: 17px 0;
+        font-size: 16px;
+    }
+}

@@ -1,5 +1,14 @@
 @import "../sassConfig.scss";
 @import "../basis/normalize.scss";
 @import "../basis/icon.scss";
+@import "../ui/index.scss";
 
 body { background-color: #f6f6f6; }
+
+
+
+
+// 空隙占位
+.blank-10-5 { height: 10px; }
+.blank-102 { height: 102px; }
+.pr{ position: relative; }
