@@ -5,6 +5,8 @@ import store from "@/store";
 // vant
 import Vant from 'vant';
 import 'vant/lib/index.css';
+// svgicon
+import "@/icon";
 Vue.use(Vant);
 Vue.config.productionTip = false;
 

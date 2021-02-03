@@ -24,6 +24,19 @@ module.exports = {
       }
     }
   },
+  chainWebpack: config => {
+    config.module.rules.delete('svg'); //重点:删除默认配置中处理svg,
+    config.module
+      .rule('svg-sprite-loader')
+      .test(/\.svg$/)
+      .include.add(path.resolve('src/icon/svg')) //处理svg目录
+      .end()
+      .use('svg-sprite-loader')
+      .loader('svg-sprite-loader')
+      .options({
+          symbolId: 'icon-[name]',
+      });
+},
   configureWebpack: (config) => {
     config.resolve = { // 配置解析别名
       extensions: ['.js', '.json', '.vue'],  // 自动添加文件名后缀

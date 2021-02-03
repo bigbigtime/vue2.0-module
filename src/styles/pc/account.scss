@@ -1,0 +1,14 @@
+.account-layout {
+    display: flex;
+    height: 100vh;
+    .wrap-left { flex: 2; }
+    .wrap-right { flex: 1; }
+}
+.account-banner {
+    height: 100%;
+    background-color: $color-main;
+}
+.accont-wrap {
+    height: 100%;
+    background-color: #000;
+}

@@ -5,7 +5,9 @@
         <UsernameTypeTag />
         <div class="blank-10-5"></div>
         <Username />
+        <Code />
         <Password />
+        <Passwords :inlineStyle="{marginBottom: 0}" />
         <div class="blank-102"></div>
         <SubmitButton />
     </div>

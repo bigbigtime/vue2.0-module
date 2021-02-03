@@ -4,7 +4,9 @@
             <div class="pr">
                 <van-field :type="value_type" @focus="active = true" @blur="active = false" v-model="value" :error="error" placeholder="获取验证码" />
                 <div class="field-right-inner">
-                    <i class="icon icon-size-27" :class="value_type === 'password' ? 'icon-eye-off' : 'icon-eye-on'" @click="toggleType"></i>
+                    <i class="icon" @click="toggleType">
+                        <svg-icon :icon-class="value_type === 'password' ? 'eyeOff' : 'eye'" class-name="svg-icon-24 svg-icon-password"></svg-icon>
+                    </i>
                 </div>
             </div>
         </div>
