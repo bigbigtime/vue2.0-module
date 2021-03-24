@@ -24,6 +24,10 @@ export default {
    name: "Login",
    components: { Username, Password, SubmitButton, UsernameTypeTag},
    props: {},
+   mounted(){
+       console.log(this.$store.state.account.flag)
+       console.log(this.$store.state.app.flag)
+   }
    
 }
 </script>
