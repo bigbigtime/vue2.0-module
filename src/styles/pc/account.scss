@@ -10,5 +10,23 @@
 }
 .accont-wrap {
     height: 100%;
+    padding: 0 50px;
     background-color: #000;
+}
+
+.form-item {
+    label{ 
+        display: block;
+        margin-bottom: 10px;
+        font-size: 15px;
+        color: #ccc !important;
+    }
+}
+
+.username-type-tag {
+    padding: 100px 0 38px;
+    li {
+        border-radius: 5px;
+        color: #999;
+    }
 }

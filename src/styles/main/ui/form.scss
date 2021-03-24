@@ -1,5 +1,5 @@
 .form-item {
-    margin-bottom: 16px;
+    margin-bottom: $form-item-mb;
 }
 .form-body {
     border-radius: 5px;
@@ -12,5 +12,24 @@
     .van-cell {
         padding: 0;
         background: none;
+    }
+}
+
+.username-type-tag {
+    text-align: right;
+    li {
+        display: inline-block;
+        margin-left: 15px;
+        padding: 7px 15px 6px 13px;
+        border-radius: 100px;
+        background-color: #fff;
+        font-size: 14px;
+        line-height: 18px;
+        color: #ccc;
+        cursor: pointer;
+        &.current {
+            background-color: $color-main;
+            color: #fff;
+        }
     }
 }

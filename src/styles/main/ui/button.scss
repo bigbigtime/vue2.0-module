@@ -18,7 +18,7 @@
     span { color: #fff; }
 }
 
-.button-ui-round { border-radius: 100px; }
+.button-ui-round { border-radius: $button-round; }
 .button-ui-block { display: block; width: 100%; }
 
 .button-ui-small {

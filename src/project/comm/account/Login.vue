@@ -18,7 +18,7 @@ import Passwords from "@c/form/Passwords";
 import SubmitButton from "@c/form/Submit";
 import Code from "@c/form/Code";
 import Pagename from "./components/PageTitle";
-import UsernameTypeTag from "./components/UsernameType";
+import UsernameTypeTag from "@c/form/UsernameType";
 
 export default {
     name: "Login",
