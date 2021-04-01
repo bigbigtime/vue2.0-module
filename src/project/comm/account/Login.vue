@@ -15,7 +15,7 @@ import Navbar from "@c/comm/Navbar";
 import Username from "@c/form/Username";
 import Password from "@c/form/Password";
 import Passwords from "@c/form/Passwords";
-import SubmitButton from "@c/form/Submit";
+import SubmitButton from "@c/form/SubmitLogin";
 import Code from "@c/form/Code";
 import Pagename from "./components/PageTitle";
 import UsernameTypeTag from "@c/form/UsernameType";

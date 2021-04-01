@@ -7,6 +7,8 @@
         display: block;
     }
 }
+// 禁用状态
+button[disabled] { opacity: .5; }
 
 /* 颜色  */
 .button-ui-main {

@@ -3,7 +3,7 @@
         <label v-if="label" style="color: #fff;">{{ labelText }}</label>
         <div class="form-body" :class="{'active' : active}">
             <div class="pr">
-                <van-field :type="value_type" @focus="active = true" @blur="active = false" v-model="value" :error="error" placeholder="获取验证码" />
+                <van-field :error-message="error" :type="value_type" @focus="active = true" @blur="active = false" @input="inputEnter" v-model="value" placeholder="获取验证码" />
                 <div class="field-right-inner">
                     <i class="icon" @click="toggleType">
                         <svg-icon :icon-class="value_type === 'password' ? 'eyeOff' : 'eye'" class-name="svg-icon-24 svg-icon-password"></svg-icon>
@@ -15,6 +15,8 @@
 </template>
 
 <script>
+// 验证
+import { validatePass } from "@/utils/validate";
 export default {
    name: 'Username',
    props: {
@@ -29,15 +31,33 @@ export default {
    },
    data(){
        return {
-            value: "123456",
+            value: "",
             active: false,
             value_type: "password",
-            error: false
+            error: ""
        }
    },
    methods: {
        toggleType(){
            this.value_type = this.value_type === 'password' ? 'text' : 'password';
+       },
+       inputEnter(value){
+           const flag = validatePass(value);
+           let msg = flag ? "" : "请输入6~20位的字母+数字";
+           this.error = !value ? "" : msg;
+           // 更新数据 
+            this.$store.commit("account/SET_STATE", {
+                password_value: { value: flag ? value : "" },
+                password_status: { value: flag },
+            })
+       }
+   },
+   watch: {
+       "$store.state.account.account_type": {
+           handler(newValue){
+               this.value = "";
+               this.inputEnter();
+           }
        }
    }
 }

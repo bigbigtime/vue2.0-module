@@ -12,6 +12,13 @@
     .van-cell {
         padding: 0;
         background: none;
+        overflow: initial;
+    }
+    .van-field__error-message {
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: $error-position;
     }
 }
 

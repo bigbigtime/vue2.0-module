@@ -1,6 +1,11 @@
 const state = {
     account_type: "phone",
-    aaa: 0
+    // 用户名
+    username_value: "",
+    username_status: false,
+    // 密码
+    password_value: "",
+    password_status: false,
 };
 const getters = {};
 const mutations = {

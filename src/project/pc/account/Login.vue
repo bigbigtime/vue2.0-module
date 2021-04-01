@@ -18,7 +18,7 @@
 <script>
 import Username from "@c/form/Username";
 import Password from "@c/form/Password";
-import SubmitButton from "@c/form/Submit";
+import SubmitButton from "@c/form/SubmitLogin";
 import UsernameTypeTag from "@c/form/UsernameType";
 export default {
    name: "Login",
