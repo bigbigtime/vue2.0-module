@@ -6,6 +6,9 @@ const state = {
     // 密码
     password_value: "",
     password_status: false,
+    // 确认密码
+    passwords_value: "",
+    passwords_status: false,
 };
 const getters = {};
 const mutations = {

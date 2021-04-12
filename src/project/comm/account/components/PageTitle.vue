@@ -1,12 +1,17 @@
 <template>
-    <div class="page-name">忘记密码</div>
+    <div class="page-name">{{ txt }}</div>
 </template>
 
 <script>
 export default {
    name: "PageName",
    components: {},
-   props: {},
+   props: {
+       txt: {
+           type: String,
+           default: ""
+       }
+   },
 }
 </script>
 <style lang="scss" scoped>

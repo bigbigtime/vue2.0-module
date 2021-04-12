@@ -1,13 +1,17 @@
 <template>
     <div id="login">
         <Navbar />
-        <Pagename />
+        <Pagename txt="登录" />
         <UsernameTypeTag />
         <div class="blank-10-5"></div>
         <Username />
         <Password />
         <div class="blank-102"></div>
         <SubmitButton />
+        <div class="link">
+            <router-link to="/register">注册</router-link>
+            <router-link to="/forget">忘记密码</router-link>
+        </div>
     </div>
 </template>
 <script>
@@ -26,5 +30,10 @@ export default {
 }
 </script>
 <style lang="scss">
-
+.link {
+    padding: 20px 0;
+    text-align: center;
+    font-size: 12px;
+    a { margin: 0 10px; }
+}
 </style>

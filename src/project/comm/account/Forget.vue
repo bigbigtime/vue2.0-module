@@ -1,7 +1,7 @@
 <template>
     <div id="login">
         <Navbar />
-        <Pagename txt="注册" />
+        <Pagename txt="忘记密码" />
         <UsernameTypeTag />
         <div class="blank-10-5"></div>
         <Username />
