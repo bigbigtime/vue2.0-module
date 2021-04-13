@@ -5,7 +5,7 @@
         <UsernameTypeTag />
         <div class="blank-10-5"></div>
         <Username />
-        <Password />
+        <Password :passwords_show="false"/>
         <div class="blank-102"></div>
         <SubmitButton />
         <div class="link">
@@ -19,7 +19,7 @@ import Navbar from "@c/comm/Navbar";
 import Username from "@c/form/Username";
 import Password from "@c/form/Password";
 import Passwords from "@c/form/Passwords";
-import SubmitButton from "@c/form/SubmitLogin";
+import SubmitButton from "@c/form/Submit";
 import Code from "@c/form/Code";
 import Pagename from "./components/PageTitle";
 import UsernameTypeTag from "@c/form/UsernameType";

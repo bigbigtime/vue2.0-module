@@ -4,7 +4,7 @@
             <div class="accont-wrap">
                 <UsernameTypeTag align="center" />
                 <Username :label="true" />
-                <Password :label="true" label-text="请再次输入密码" />
+                <Password :passwords_show="false" :label="true" label-text="请再次输入密码" />
                 <div class="blank-50"></div>
                 <SubmitButton />
             </div>
@@ -18,7 +18,7 @@
 <script>
 import Username from "@c/form/Username";
 import Password from "@c/form/Password";
-import SubmitButton from "@c/form/SubmitLogin";
+import SubmitButton from "@c/form/Submit";
 import UsernameTypeTag from "@c/form/UsernameType";
 export default {
    name: "Login",

@@ -19,6 +19,14 @@ const mutations = {
             payload[key].session && sessionStorage.setItem(key, payload[key].value)
             payload[key].local && localStorage.setItem(key, payload[key].value)
         }
+    },
+    CLEAR(state){
+        state.username_value = "";
+        state.username_status = false;
+        state.password_value = "";
+        state.password_status = false;
+        state.passwords_value = "";
+        state.passwords_status = false;
     }
 };
 const actions = {};
