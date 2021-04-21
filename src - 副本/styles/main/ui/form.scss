@@ -1,0 +1,42 @@
+.form-item {
+    margin-bottom: $form-item-mb;
+}
+.form-body {
+    border-radius: 5px;
+    background-color: #fff;
+    padding: 13.5px 20px;
+    border-width: 2px;
+    border-style: solid;
+    border-color: #fff;
+    &.active { border-color: $color-main; }
+    .van-cell {
+        padding: 0;
+        background: none;
+        overflow: initial;
+    }
+    .van-field__error-message {
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: $error-position;
+    }
+}
+
+.username-type-tag {
+    text-align: right;
+    li {
+        display: inline-block;
+        margin-left: 15px;
+        padding: 7px 15px 6px 13px;
+        border-radius: 100px;
+        background-color: #fff;
+        font-size: 14px;
+        line-height: 18px;
+        color: #ccc;
+        cursor: pointer;
+        &.current {
+            background-color: $color-main;
+            color: #fff;
+        }
+    }
+}
