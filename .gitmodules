@@ -1,0 +1,3 @@
+[submodule "src/module"]
+	path = src/module
+	url = git@github.com:bigbigtime/vue-account.git
