@@ -2,7 +2,7 @@ import Vue from "vue";
 import Vuex from "vuex";
 
 Vue.use(Vuex);
-import account from "./modules/account";
+import account from "@m/store/account";
 import app from "./modules/app";
 import config from "./modules/config";
 // vuex命名空间

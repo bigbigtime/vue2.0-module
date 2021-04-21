@@ -6,23 +6,23 @@ const routes = [
   {
     path: "/",
     name: "Home",
-    component: () => import(`../project/${process.env.VUE_APP_PROJECT}/home/Index`)
+    component: () => import(`../views/home/Index`)
   },
   {
     path: "/login",
     name: "Login",
-    component: () => import(`../project/${process.env.VUE_APP_PROJECT}/account/Login`)
+    component: () => import(`../views/account/Login`)
   },
   {
     path: "/register",
     name: "Register",
-    component: () => import(`../project/${process.env.VUE_APP_PROJECT}/account/Register`)
+    component: () => import(`../views/account/Register`)
   },
   ,
   {
     path: "/forget",
     name: "Forget",
-    component: () => import(`../project/${process.env.VUE_APP_PROJECT}/account/Forget`)
+    component: () => import(`../views/account/Forget`)
   }
 ];
 

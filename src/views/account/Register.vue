@@ -1,12 +1,12 @@
 <template>
-    <CommLogin />
+    <CommRegister />
 </template>
 
 <script>
-import CommLogin from "@/project/comm/account/Login";
+import CommRegister from "@m/account/comm/account/Register";
 export default {
    name: "Login",
-   components: { CommLogin },
+   components: { CommRegister },
    props: {},
    
 }
